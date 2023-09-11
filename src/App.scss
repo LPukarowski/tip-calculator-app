@@ -1,0 +1,62 @@
+@use './partials/global.scss' as *;
+
+
+.App {
+  text-align: center;
+  @include font(1.5rem, 700);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.title {
+  color: hsl(183, 100%, 15%);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.input {
+  @include font(1.5rem, 700);
+}
+
+.totals {
+  background-color: $vd;
+}
+
+
+
+
+
+
+.swatch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .5rem;
+}
+.c {
+  font-size: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: hsl(0, 0%, 100%);
+}
+.s {background-color:hsl(172, 67%, 45%) ;}
+.vd {background-color: hsl(183, 100%, 15%);}
+.dg {background-color: hsl(186, 14%, 43%);}
+.g {background-color: hsl(184, 14%, 56%);}
+.lg {background-color: hsl(185, 41%, 84%);}
+.vlg {background-color: hsl(189, 41%, 97%);}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
