@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Tip from './Components/Tip';
 import dollarIcon from './images/icon-dollar.svg';
 import personIcon from './images/icon-person.svg';
+import logo from './images/logo.svg'
 
 function App() {
 
@@ -15,7 +16,7 @@ const percent = [5, 10, 15, 25, 50, 'custom'];
 
   return (
     <div className="App">
-      <h3 className='title'>S P L I<br/>T T E R</h3>
+      <img src={logo} className='title'/>
       <form className='form'>
         <div className='inputs'>
           <label>Bill</label>
@@ -44,11 +45,11 @@ const percent = [5, 10, 15, 25, 50, 'custom'];
         <div className='totals'>
             <div className='totals__tip'>
               <p>Tip Amount<br/><span>/ person</span></p>
-              <h2>${}</h2>
+              <h2>${tip === 0? '0.00': {tip}}</h2>
             </div>
             <div className='totals__person'>
               <p>Total<br/><span>/ person</span></p>
-              <h2>${}</h2>
+              <h2>${bill === 0? '0.00': {bill}}</h2>
             </div>
             <button className='totals__button'>
               <p>Reset</p>

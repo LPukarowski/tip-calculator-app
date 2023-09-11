@@ -10,6 +10,11 @@
     font-weight: $font-weight;
 };
 
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 $s: hsl(172, 67%, 45%);
 $vd: hsl(183, 100%, 15%);
 $dg: hsl(186, 14%, 43%);

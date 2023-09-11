@@ -8,9 +8,15 @@
 }
 
 .title {
-  color: hsl(183, 100%, 15%);
+  padding: 40px 0;
 }
 
+.form {
+  background-color: $white;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -31,7 +37,18 @@
 }
 
 .totals {
+  margin-top: 1rem;
   background-color: $vd;
+  border-radius: 10px;
+  &__tip{
+    @include flex; 
+    text-align: left;
+  }
+  &__person{
+    @include flex; 
+    text-align: left;
+  }
+  
 }
 
 
