@@ -1,8 +1,15 @@
 @font-face {
     font-family: 'Space Mono';
-    src: url(https://fonts.google.com/specimen/Space+Mono);
+    src: url('../fonts/Space_Mono/SpaceMono-Bold.ttf')
+         format('truetype');
     font-weight: 700;
 };
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') 
+         format('truetype');
+    font-weight: 400;
+}
 
 @mixin font ($font-size, $font-weight) {
     font-family: 'Space Mono';
@@ -13,6 +20,7 @@
 @mixin flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 $s: hsl(172, 67%, 45%);

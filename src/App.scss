@@ -13,7 +13,7 @@
 
 .form {
   background-color: $white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -34,21 +34,42 @@
 
 .input {
   @include font(1.5rem, 700);
+  text-align: end;
+  color: $vd;
 }
 
 .totals {
   margin-top: 1rem;
   background-color: $vd;
-  border-radius: 10px;
+  border-radius: 1rem;
+  padding: 1rem;
   &__tip{
     @include flex; 
     text-align: left;
+    &--amount{
+      color: $s;
+    }
+    &--title{color: $white; font-size: 1rem;}
+    &--sub{color: $g;}
   }
   &__person{
     @include flex; 
     text-align: left;
+    &--amount{
+      color: $s;
+    }
+    &--title{color: $white; font-size: 1rem;}
+    &--sub{color: $g;}
   }
-  
+  &__button{
+    width: 100%;
+    padding: .5rem 0;
+    border: none;
+    border-radius: 10px;
+    background-color: $s;
+    color: $vd;
+    &--text{margin: 0; @include font(1.5rem, 700)}
+  }
 }
 
 

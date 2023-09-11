@@ -13,16 +13,19 @@ const [group, setGroup] = useState(0);
 
 const percent = [5, 10, 15, 25, 50, 'custom'];
 
+const handleChange = (e) => {
+  
+}
 
   return (
     <div className="App">
-      <img src={logo} className='title'/>
+      <img src={logo} className='title' alt='logo '/>
       <form className='form'>
         <div className='inputs'>
           <label>Bill</label>
           <div className='inputs__bill'>
-            <img src={dollarIcon}/>
-            <input className='input'/>
+            <img src={dollarIcon} alt='bill'/>
+            <input className='input' value={bill}/>
           </div>
           <div className=''>
             <label>Select Tip %</label><br/>
@@ -38,29 +41,29 @@ const percent = [5, 10, 15, 25, 50, 'custom'];
           </div>
           <label>Number of People</label>
           <div className='inputs__people'>
-            <img src={personIcon}/>
-            <input className='input'/>
+            <img src={personIcon} alt='group'/>
+            <input className='input' value={group}/>
           </div>
         </div>
         <div className='totals'>
             <div className='totals__tip'>
-              <p>Tip Amount<br/><span>/ person</span></p>
-              <h2>${tip === 0? '0.00': {tip}}</h2>
+              <p className='totals__tip--title'>Tip Amount<br/><span className='totals__tip--sub'>/ person</span></p>
+              <h2 className='totals__tip--amount'>${tip === 0? '0.00': {tip}}</h2>
             </div>
             <div className='totals__person'>
-              <p>Total<br/><span>/ person</span></p>
-              <h2>${bill === 0? '0.00': {bill}}</h2>
+              <p className='totals__person--title'>Total<br/><span className='totals__person--sub'>/ person</span></p>
+              <h2 className='totals__person--amount'>${bill === 0? '0.00': {bill}}</h2>
             </div>
             <button className='totals__button'>
-              <p>Reset</p>
+              <p className='totals__button--text'>Reset</p>
             </button>
         </div>
       </form>
 
 
       <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.github.com/LPukarowski" target='_blank'>Logan Pukarowski</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
+        Coded by <a href="https://www.github.com/LPukarowski" target='_blank' rel='noreferrer'>Logan Pukarowski</a>.
       </div>
       <div className='swatch'>
         <div className='s c'><p>s-cyan</p></div>
